@@ -6,24 +6,10 @@
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
       <ul class="icons">
-        {%- if site.dribbble_username -%}
-          <li>
-            <a target="_blank" href="https://dribbble.com/{{ site.dribbble_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-              <i class="fa fa-dribbble"></i>
-            </a>
-          </li>
-        {%- endif -%}
         {%- if site.facebook_username -%}
           <li>
             <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
               <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if site.flickr_username -%}
-          <li>
-            <a target="_blank" href="https://www.flickr.com/photos/{{ site.flickr_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-              <i class="fa fa-flickr"></i>
             </a>
           </li>
         {%- endif -%}
@@ -48,13 +34,6 @@
             </a>
           </li>
         {%- endif -%}
-        {%- if site.pinterest_username -%}
-          <li>
-            <a target="_blank" href="https://www.pinterest.com/{{ site.pinterest_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-              <i class="fa fa-pinterest"></i>
-            </a>
-          </li>
-        {%- endif -%}
         {%- if site.twitter_username -%}
           <li>
             <a target="_blank" href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
@@ -62,21 +41,6 @@
             </a>
           </li>
         {%- endif -%}
-        {%- if site.youtube_username -%}
-          <li>
-            <a target="_blank" href="https://www.youtube.com/{{ site.youtube_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-              <i class="fa fa-youtube-play"></i>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if site.googleplus_username -%}
-          <li>
-            <a target="_blank" href="https://plus.google.com/{{ site.googleplus_username| escape }}" class="button button--sacnite button--round-l">
-              <i class="fa fa-google-plus"></i>
-            </a>
-          </li>
-        {%- endif -%}
-      </ul>
 
       {%- if site.email -%}
         <p>
